@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Question 01</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="senior_software_engineer_data">Senior Software Engineer - Data</string>
+    <string name="housecanary">HouseCanary</string>
+    <string name="san_fransico_ca">San Fransico, CA</string>
+    <string name="easy_apply">EASY APPLY</string>
+    <string name="software_engineer">Software Engineer</string>
+</resources>

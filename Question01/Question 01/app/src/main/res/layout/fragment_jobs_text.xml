@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobsTextFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="Working at a job, vocation or career is one of the critical pieces for most of our lives. A job provides income that we need to pay for our basic needs such as food, clothing, and a place to live. The amount of one’s income also determines what kind of extra things a person can do. What kind of leisure activities to participate in or what kind of vehicle one can drive are all an outcome of one’s income. A job does more than provide income for a person. A job also provides people with a sense of fulfillment, productivity, and purpose. We are created to be active and productive people."
+            tools:ignore="HardcodedText" />
+
+    </ScrollView>
+
+</FrameLayout>

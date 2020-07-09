@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/green_color"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/top_tool_bar"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/back_icon_iv"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_screen"
+                android:tint="@color/white"
+                android:padding="20dp"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/cross_iv"
+                android:layout_toEndOf="@+id/back_icon_iv"
+                android:layout_centerVertical="true"
+                android:text="Software Engineer"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+            <ImageView
+                android:id="@+id/cross_iv"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/cross_icon"
+                android:padding="10dp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/location_ic"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/location_icon"
+                android:tint="@color/white"
+                android:padding="20dp"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="San Francisco, CA (US)"
+                android:gravity="center_vertical"
+                android:paddingStart="25dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/gps_iv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gps_icon"
+                    android:padding="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_toStartOf="@+id/gps_iv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cross_icon"
+                    android:padding="10dp"
+                    android:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/tabLout"
+        app:tabIconTint="@null"
+        android:background="@android:color/transparent"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicatorFullWidth="true"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/blue_unselected_toolbar"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabIndicatorColor="@color/blue_unselected_toolbar"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager" />
+
+
+</LinearLayout>

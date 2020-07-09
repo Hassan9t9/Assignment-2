@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Question 02</string>
+    <string name="screen_01">SCREEN 01</string>
+    <string name="next">Next</string>
+    <string name="user_register">USER REGISTER</string>
+    <string name="screen_02">SCREEN 02</string>
+    <string name="log_in">LOG IN</string>
+    <string name="screen_03">SCREEN 03</string>
+    <string name="android_def">An Android app is a software application running on the Android platform. Because the Android platform is built for mobile devices, a typical Android app is designed for a smartphone or a tablet PC running on the Android OS.</string>
+    <string name="back_to_screen_01">BACK TO SCREEN 01</string>
+</resources>
